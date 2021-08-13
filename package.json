@@ -1,0 +1,17 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "less": "^4.1.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-less": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
