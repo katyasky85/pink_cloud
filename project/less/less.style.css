@@ -1,12 +1,4 @@
 @import "less.style.css";
-/*.page-header,
-.page-header_logo {
-    .no-outline ();
-}*/
-.page-header_logo {
-  background: rgba(255, 255, 255, 0.5);
-}
-/* файл blocks/main-nav.less */
 .main-nav_list {
   margin: 0;
   padding: 0;
@@ -15,6 +7,28 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*.page-header,
+.page-header_logo {
+    .no-outline ();
+}*/
+.page-header_logo {
+  background: rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 768px) {
   .main-nav {

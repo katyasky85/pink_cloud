@@ -1,4 +1,8 @@
 @import "less.style.css";
+@import "variables.less";
+@import url(C:\Users\User\Desktop\pink\blocks\main-nav.less);
+@import "scaffolding.less";
+@import "mixins.less";
 /*.page-header,
 .page-header_logo {
     .no-outline ();
@@ -6,17 +10,7 @@
 .page-header_logo {
     background: rgba(255, 255, 255, 0.5);
 }
-/* файл blocks/main-nav.less */
-.main-nav_list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.main-nav {
-    width: 320px;
-    margin: 0 auto;
-}
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
     .main-nav {
         width: auto;
         margin: 0;
@@ -32,7 +26,7 @@
 .site-list {
     width: 570px;
 }
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
    .main-nav_wrapper {
        width: 960px;
    } 
