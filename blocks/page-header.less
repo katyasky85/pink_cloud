@@ -1,0 +1,37 @@
+//main: ../project/less/less.style.less
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+.page-header {
+    display:flex;
+    flex-direction: column;
+}
+.page-header__logo {
+    height: 85px;
+}
+.page-header__logo {
+    background: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: @tablet-width) {
+    .page-header__logo {
+        order: 2;
+        height: 400px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .page-header__logo {
+        height: 648px;
+    }
+}
+.page-header,
+.page-header__logo {
+    outline: none;
+    background: transparent;
+}
+.page-header::before,
+.page-header__logo::before {
+    display: none;
+}
+.page-header__logo {
+    background: rgba(255,255,255,0.5);
+}
