@@ -1,6 +1,4 @@
 //main: ../project/less/less.style.less
-@tablet-width: 768px;
-@desktop-width: 1200px;
 
 .page-header {
     display:flex;
@@ -8,10 +6,9 @@
 }
 .page-header__logo {
     height: 85px;
+    text-align: center;
 }
-.page-header__logo {
-    background: rgba(255, 255, 255, 0.5);
-}
+
 @media (min-width: @tablet-width) {
     .page-header__logo {
         order: 2;
@@ -25,13 +22,12 @@
 }
 .page-header,
 .page-header__logo {
-    outline: none;
-    background: transparent;
+    .no-outline();
 }
-.page-header::before,
+/*.page-header::before,
 .page-header__logo::before {
     display: none;
-}
+}*/
 .page-header__logo {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
