@@ -1,5 +1,10 @@
-body {
-    background: #292929 url(C:\Users\User\Desktop\pink\image/body-borodinski.png) no-repeat 50% 0;
-    background-size: 720px auto;
-    min-height: 750px;
+//main: less.style.less
+@tablet-width: 768px;
+@desktop-width: 1200px;
+.no-outline() {
+    outline: none;
+    background: transparent;
+    &::before {
+        display: none;
+    }
 }
