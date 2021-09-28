@@ -2,13 +2,22 @@
 .block-mock {
     height: 390px;
 }
+.block-mock:nth-of-type(1) {
+    .mock(50px);
+}
 @media (min-width: @tablet-width) {
     .block-mock {
         height: 469px;
+    }
+    .block-mock:nth-of-type(1) {
+        .mock(300px);
     }
 }
 @media (min-width: @desktop-width) {
     .block-mock {
         height: 720px;
     }
+    .block-mock:nth-last-of-type(1) {
+        .mock(400px);
+      }
 }
