@@ -1,33 +1,18 @@
 @import "less.style.css";
 @import "variables.less";
-@import url(C:\Users\User\Desktop\pink\blocks\main-nav.less);
 @import "scaffolding.less";
 @import "mixins.less";
-/*.page-header,
-.page-header_logo {
-    .no-outline ();
-}*/
-.page-header_logo {
-    background: rgba(255, 255, 255, 0.5);
-}
-@media (min-width: @tablet-width) {
-    .main-nav {
-        width: auto;
-        margin: 0;
-    }
+@import "outlines.less";
+@import "site-list.less";
+@import "user-list.less";
+@import url(../../blocks/main-nav.less);
+@import url(../../blocks/page-header.less);
+@import url(../../blocks/block-mock.less);
+@import url(../../blocks/stats.less);
 
-.main-nav_wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
-    }
-}
-.site-list {
-    width: 570px;
-}
-@media (min-width: @desktop-width) {
-   .main-nav_wrapper {
-       width: 960px;
-   } 
-}
+
+
+
+
+
+
