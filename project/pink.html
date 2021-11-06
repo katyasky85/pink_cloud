@@ -7,9 +7,17 @@
     <link rel="stylesheet" type="text/css" href="./less/less.style.css">
 </head>
 <body>
+    <div style="display: none;">
+        <include src="pink/sprite.svg"></include>
+    </div>
+    
     <header class="page-header">
         <a class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../image/Borodinski-desktop.svg.svg">
+                <source media="(min-width: 768px)" srcset="../image/barbershop-tablet.svg">
         <img class="page-header__logo-image" src="../image/small-BR1.svg" width="226" height="30" alt="Барбершоп Бородинский">
+            </picture>
         </a>
         <!--<nav class="nav-mock"></nav>-->
             <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -17,37 +25,40 @@
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item">
-                        <a>Главная</a>
+                        <a>
+                            <svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="sprite.svg#icon-comb"></use></svg> 
+                            Главная
+                        </a>
                         </li>
                         <li class="site-list__item site-list__item--active">
-                        <a href="photo.html">Наши работы</a>
+                            <a href="photo.html">
+                            <svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="sprite.svg#icon-comb"></use></svg>
+                            Наши работы
+                            </a>
                         </li>
                         <li class="site-list__item">
-                        <a href="form.html">Записаться</a>
+                        <a href="form.html">
+                        <svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="sprite.svg#icon-comb"></use></svg>
+                        Записаться
+                        </a>
                         </li>
                         <li class="site-list__item">
-                        <a href="contacts.html">Контакты</a>
+                        <a href="contacts.html">
+                        <svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="sprite.svg#icon-comb"></use></svg>
+                        Контакты
+                        </a>
                         </li>
                         <li class="site-list__item">
-                        <a href="web-site.html">HTML Academy</a>
+                        <a href="web-site.html">
+                        <svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="../../pink/sprite.svg#icon-comb"></use></svg>
+                        HTML Academy
+                        </a>
                         </li>
                     </ul>
                     <ul class="main-nav__list user-list">
                         <li class="user-list__item">
                         <a class="user-list__login" href="login.html">
-                        <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.000000 225.000000">
-                            <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" stroke="none">
-<path d="M1005 1960 c-303 -46 -566 -261 -669 -547 l-26 -73 73 0 73 0 13 38
-c39 113 143 245 254 323 399 280 955 74 1084 -401 24 -88 24 -262 0 -350 -129
--475 -685 -681 -1084 -401 -111 78 -215 210 -254 324 l-13 37 -73 0 -73 0 26
--73 c165 -457 693 -680 1136 -479 241 109 423 336 479 597 7 33 13 110 13 170
-0 61 -6 137 -13 170 -67 314 -309 566 -617 645 -88 23 -247 32 -329 20z"/>
-<path d="M1027 1402 l-47 -48 75 -74 c41 -41 75 -78 75 -82 0 -5 -191 -8 -425
--8 l-425 0 0 -65 0 -65 425 0 c234 0 425 -3 425 -7 0 -4 -34 -42 -75 -83 l-75
--76 50 -49 50 -50 165 165 165 165 -162 162 c-90 90 -165 163 -168 163 -3 0
--27 -22 -53 -48z"/>
-                            </g>
-                        </svg>
+                        <svg class="user-list__login-icon" width="16" height="16"><use xlink:href="sprite.svg#icon-login"></use></svg>
                         Войти
                         </a>
                         </li>

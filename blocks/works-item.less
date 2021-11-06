@@ -1,3 +1,4 @@
+//main: ../project/less/less.style.less
 .works-item {
     margin-bottom: 20px;
     padding: 0 20px;
@@ -129,15 +130,15 @@
   }
   
   .works-item__parameter-item--haircut::before {
-    background-image: url("img/scissors-icon.svg");
+    background-image: url("../image/cut.svg.svg");
   }
   
   .works-item__parameter-item--shaving::before {
-    background-image: url("img/beard-icon.svg");
+    background-image: url("../image/beard.svg.svg");
   }
   
   .works-item__parameter-item--mustache::before {
-    background-image: url("img/mustache-icon.svg");
+    background-image: url("../image/mustache.svg.svg");
   }
   
   .works-item__parameter-item:last-child {
@@ -152,8 +153,6 @@
       margin-bottom: 41px;
       padding: 0;
     }
-}
-  
     .works-item--work-of-month::before {
       top: 35px;
       bottom: auto;
@@ -216,6 +215,7 @@
     .works-item__title {
       margin-bottom: 26px;
     }
+  }
 
   @media (min-width: @desktop-width) {
     .works-item:first-child .works-item__image-wrapper {

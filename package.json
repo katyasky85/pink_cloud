@@ -7,12 +7,22 @@
     "less": "^4.1.1"
   },
   "devDependencies": {
-    "grunt-contrib-less": "^3.0.0"
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-jshint": "^3.1.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-csso": "^2.2.4",
+    "grunt-cwebp": "^3.0.3",
+    "grunt-juwain-posthtml": "^0.6.0",
+    "grunt-svgstore": "^2.0.0",
+    "load-grunt-tasks": "^5.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'pink/project/less/**/*.less' --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
+  }
 }

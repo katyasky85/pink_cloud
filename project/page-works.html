@@ -5,13 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./less/less.style.css">
 </head>
 <body>
-    <article class="works-item">
-        <p class="works-item__image" src="" alt="пример работы">
-
+    <div class="block-mock"></div>
+    <main class="page-main page-main--inner">
+        <header class="page-title">
+            <h1 class="page-title__title">Наши работы</h1>
+            <a class="button" href="#">На главную</a>
+        </header>
+      <section class="works">
+        <article class="works-item works-item--work-of-month">
+        <p class="works-item__image-wrapper">
+            <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../image/mobile.jpg, ../image/mobile@2x.jpg">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../image/mobile.jpg.webp, ../image/mobile@2x.jpg.webp">
+                <source type="image/webp" srcset="../image/mobile.jpg.webp, ../image/mobile@2x.jpg.webp">
+                    <source media="(min-width: 1200px)" srcset="../image/mobile.jpg, ../image/mobile@2x.jpg">
+                    <source media="(min-width: 768px)" srcset="../image/mobile.jpg, ../image/mobile@2x.jpg">
+                <img class="works-item__image" src="../image/mobile.jpg" srcset="../image/mobile@2x.jpg" alt="пример работы">
+            </picture>
         </p>
+        <div class="works-item__review">
+            <h2 class="works-item__title">Лжепетр Мчиславский</h2>
+            <blockquote class="works-item__text">Где я только не стригся, но так как делаете это вы - не умеет никто другой!Еще раз спасибо и до скорого!</blockquote>
+            <ul class="works-item__parameter-list">
+            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+            <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритье</li>
+            <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+            </ul>
+        </div>
     </article>
-    
+    <article class="works-item">
+        <p class="works-item__image-wrapper">
+            <source media="(min-width: 1200px)" srcset="../image/mobile-Saha.jpg.jpg, ../image/mobile-Saha@2x.jpg">
+            <source media="(min-width: 768px)" srcset="../image/mobile-Saha.jpg.jpg, ../image/mobile-Saha@2x.jpg">
+        <img class="works-item__image" src="../image/mobile-Saha.jpg.jpg" srcset="../image/mobile-Saha@2x.jpg.jpg" alt="пример работы">
+        </p>
+        <div class="works-item__review">
+            <h2 class="works-item__title">Саша Мальцев</h2>
+            <blockquote class="works-item__text">Попросил омолодить и омолодили!Кто теперь скажет, что мне 45?</blockquote>
+            <ul class="works-item__parameter-list">
+            <li class="works-item__parameter-item works-item__parameter-item--haircut">Стрижка</li>
+            </ul>
+        </div>
+    </article>
+    <article class="works-item">
+        <p class="works-item__image-wrapper">
+            <source media="(min-width: 1200px)" srcset="../image/mobile-page.1jpg, ../image/mobile-page@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../image/mobile-page.1jpg, ../image/mobile-page@2x.jpg 2x">
+            <img class="works-item__image" src="../image/mobile-page.1jpg.jpg" srcset="mobile-page@2x.jpg 2x.jpg" alt="Пример нашей работы">
+        </p>
+        <div class="works-item__review">
+            <h2 class="works-item__title">Владимир Иваныч</h2>
+            <blockquote class="works-item__text">К зимнему сезону-готов!</blockquote>
+            <ul class="works-item__parameter-list">
+                <li class="works-item__parameter-item works-item__parameter-item--shaving">Бритье</li>
+                <li class="works-item__parameter-item works-item__parameter-item--mustache">Усы</li>
+            </ul>
+        </div>
+    </article>
+    <article class="works-item">
+        <p class="works-item__image-wrapper">
+            <img class="works-item__image" src="../image/mobile-page.2jpg.jpg" srcset="../image/mobile-page@2x.jpg.jpg" alt="Пример нашей работы">
+        </p>
+        <div class="works-item__review">
+            <h2 class="works-item__title">Винстон Синий</h2>
+            <blockquote class="works-item__text">Как только заростаю и волосы начинают мешать видеть - бегом в Бородинский!</blockquote>
+            <ul class="works-item__parameter-list">
+                <li class="works-item__parameter-item works-item__parameter-item--shaving">Стрижка</li>
+            </ul>
+        </div>
+    </article>
+    </section>
+    </main>
+        <svg width="150" height="150">
+        <use xlink:href="sprite.svg#ring-logo"></use>
+        </svg>
 </body>
 </html>
